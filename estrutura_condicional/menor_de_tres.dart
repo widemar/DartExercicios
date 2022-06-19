@@ -10,12 +10,9 @@ void main(List<String> arguments) {
     stdout.write("Terceiro valor: ");
     int terceiro = int.parse(stdin.readLineSync()!);
 
-    int menor;
-    if (primeiro < segundo && primeiro < terceiro) {
-      menor = primeiro;
-    } else {
-      menor = min(segundo, terceiro);
-    }
+    int menor = primeiro < segundo && primeiro < terceiro
+        ? primeiro
+        : min(segundo, terceiro);
 
     stdout.write("Menor = $menor".toUpperCase());
   } on FormatException catch (e) {
