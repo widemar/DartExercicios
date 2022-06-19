@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 void main(List<String> arguments) {
   try {
@@ -12,10 +13,8 @@ void main(List<String> arguments) {
     int menor;
     if (primeiro < segundo && primeiro < terceiro) {
       menor = primeiro;
-    } else if (segundo < terceiro) {
-      menor = segundo;
     } else {
-      menor = terceiro;
+      menor = min(segundo, terceiro);
     }
 
     stdout.write("Menor = $menor".toUpperCase());
