@@ -14,4 +14,5 @@ void main(List<String> arguments) {
   stdout.writeln("Area = ${area.toStringAsFixed(4)}".toUpperCase());
   stdout.writeln("Perímetro = ${perimetro.toStringAsFixed(4)}".toUpperCase());
   stdout.writeln("Diagonal = ${diagonal.toStringAsFixed(4)}".toUpperCase());
+
 }
