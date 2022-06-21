@@ -10,7 +10,6 @@ void main(List<String> arguments) {
 
     Retangulo retangulo = Retangulo(largura, altura);
     stdout.write(retangulo);
-    retangulo.area();
   } on FormatException catch (e) {
     stdout.write(e);
   } catch (e) {
