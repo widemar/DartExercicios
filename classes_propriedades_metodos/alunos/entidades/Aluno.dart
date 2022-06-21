@@ -35,11 +35,9 @@ class Aluno {
   }
 
   String situacaoAluno() {
-    if (notaFinal() >= 60.00) {
-      return "pass".toUpperCase();
-    } else {
-      return "Failed\nFaltaram ${(60 - notaFinal()).toStringAsFixed(2)} pontos";
-    }
+    return notaFinal() >= 60.00
+        ? "pass".toUpperCase()
+        : "Failed\nFaltaram ${(60 - notaFinal()).toStringAsFixed(2)} pontos";
   }
 
   @override
