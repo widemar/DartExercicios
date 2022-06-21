@@ -33,6 +33,6 @@ class Funcionario {
 
   @override
   String toString() {
-    return "$_nome, R\$ ${salarioLiquido().toStringAsFixed(2)}";
+    return "$nome, R\$ ${salarioLiquido().toStringAsFixed(2)}";
   }
 }
